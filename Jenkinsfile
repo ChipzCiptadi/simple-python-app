@@ -7,6 +7,12 @@ pipeline{
             }
         }
 
+        stage("test") {
+            steps{
+                echo "========executing test========"
+            }
+        }
+
         stage("deploy"){
             steps{
                 echo "====++++executing deploy++++===="
